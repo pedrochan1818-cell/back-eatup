@@ -74,7 +74,7 @@ Route::post('/reservas', [ReservaController::class, 'store']);
 Route::post('/reservas/crear-orden', [ReservaController::class, 'crearOrden']);
 Route::post('/save-qr', [ReservaController::class, 'saveQR']);
 Route::get('/qrcodes/{filename}', [ReservaController::class, 'getQR'])->where('filename', '.*');
-Route::get('reservas/mostrarQR/{nombre_foto}', [ReservaController::class, 'mostrarQR']);
+Route::get('/reservas/mostrarQR/{nombre_foto}', [ReservaController::class, 'mostrarQR']);
 
 
 
