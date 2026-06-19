@@ -1,6 +1,5 @@
 FROM php:8.2-apache
 
-
 RUN apt-get update && apt-get install -y \
     git \
     curl \
@@ -11,9 +10,12 @@ RUN apt-get update && apt-get install -y \
     libfreetype6-dev \
     libzip-dev \
     libonig-dev \
+    libpq-dev \
     && docker-php-ext-install \
     pdo \
     pdo_mysql \
+    pdo_pgsql \
+    pgsql \
     mbstring \
     zip \
     gd
