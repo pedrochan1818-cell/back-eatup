@@ -11,12 +11,12 @@ return [
     | in web browsers. You are free to adjust these settings as needed.
     |
     | To learn more: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
-    |  https://back-eatup.onrender.com    http://localhost:3000
+    |  https://front-eatup.vercel.app    http://localhost:3000
     */
 
     'paths' => ['api/*', 'sanctum/csrf-cookie', '*'],
     'allowed_methods' => ['*'],
-    'allowed_origins' => ['https://back-eatup.onrender.com'],
+    'allowed_origins' => ['https://front-eatup.vercel.app'],
     'allowed_origins_patterns' => [],
     'allowed_headers' => ['*'],
     'exposed_headers' => [],
